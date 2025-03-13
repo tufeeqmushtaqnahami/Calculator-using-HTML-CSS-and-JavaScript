@@ -12,10 +12,10 @@ body {
 
 /* Calculator Box */
 .calculator {
+  font-family: "Times New Roman", Times, serif;
   background-color: #1e1e1e;
   padding: 25px;
   border-radius: 15px;
-  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.6);
   text-align: center;
   transition: 0.3s ease;
   position: relative; /* To position the toggle button inside */
@@ -60,7 +60,7 @@ button {
 /* Button Hover & Active Effects */
 button:hover {
   background-color: #555;
-  transform: scale(1.1);
+  transform: scale(1.2);
 }
 
 button:active {
@@ -74,12 +74,13 @@ button:active {
 }
 
 .clear:hover {
-  background-color: darkred;
+  background-color: rgb(255, 8, 8);
+  color: black;
 }
 
 /* Light Mode Styles */
 body.light-mode {
-  background-color: #505186;
+  background-color: #727288;
   color: black;
 }
 
@@ -111,11 +112,9 @@ body.light-mode #display {
   transition: transform 0.2s;
 }
 
-#mode-toggle:hover {
-  transform: rotate(20deg);
-}
-
-/* Light Mode Toggle Icon */
-body.light-mode #mode-toggle {
-  color: black;
+.name {
+  margin: 10px;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: lighter;
 }
